@@ -1,11 +1,12 @@
 /* eslint-disable prettier/prettier */
 import {StyleSheet} from 'react-native';
+import {heightPercentageToDP} from 'react-native-responsive-screen'
 
 const Radius = 35;
 
 export const HomeStyle = StyleSheet.create({
   Container: {
-    flex: 1,
+    height : 1000,
     justifyContent: 'space-between',
   },
   topContainer: {
@@ -15,6 +16,10 @@ export const HomeStyle = StyleSheet.create({
     borderBottomRightRadius: Radius,
     paddingHorizontal: 30,
   },
+  // bodyContent: { 
+   
+  //   backgroundColor: 'gray',
+  // },
   HeroContainer: {
     marginTop: 50,
     height: 220,
@@ -37,7 +42,7 @@ export const HomeStyle = StyleSheet.create({
   ButtonContainer: {
     height: 40,
     width: 140,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
     borderRadius: 6,
     elevation: 2,
@@ -48,4 +53,39 @@ export const HomeStyle = StyleSheet.create({
   secondButton: {
     backgroundColor: '#5374FF',
   },
+  biodata: {
+    flexDirection: 'row',
+  },
+  personName: {
+    flexDirection: 'column',
+    paddingHorizontal:20,
+    // size:20,
+  },
+  article: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    // marginTop: 2,
+    // marginRight: 20,
+  },
+  followerKotak: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    // flexDirection: 'space-around',
+    marginTop:25,
+    backgroundColor:'#E3E4DF',
+    height:50,
+    width:120,
+    borderRadius:9,
+  },
+  tulisanData: { 
+    fontSize:9,
+    justifyContent:'space-between',
+    marginTop:7,
+  },
+  angkaTulisanData: {
+    fontWeight: 'bold',
+    justifyContent:'center',
+    alignItems: 'center',
+  }
+
 });
